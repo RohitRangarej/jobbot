@@ -1,0 +1,113 @@
+{
+  "poll_minutes": 60,
+  "min_score": 35,
+  "max_required_years": 3,
+  "stretch_years": 5,
+  "max_posting_age_days": 45,
+  "notify_min_fit": 70,
+  "min_salary_lpa": 0,
+  "priority_salary_lpa": 15,
+  "alert_days": 14,
+  "alert_senders": [
+    ["LinkedIn", "jobalerts-noreply@linkedin.com", ""],
+    ["LinkedIn", "jobs-noreply@linkedin.com", ""],
+    ["LinkedIn", "jobs-listings@linkedin.com", ""],
+    ["Indeed", "indeed.com", ""],
+    ["Wellfound", "wellfound.com", ""],
+    ["Naukri", "naukri.com", "India"],
+    ["Instahyre", "instahyre.com", "India"],
+    ["Foundit", "foundit.in", "India"],
+    ["Hirist", "hirist.tech", "India"],
+    ["JobStreet", "jobstreet", ""],
+    ["Glints", "glints.com", ""],
+    ["Tech in Asia", "techinasia.com", ""]
+  ],
+  "target_employers": ["stripe", "datadog", "grab", "airwallex", "cockroach labs", "temporal"],
+  "regions": [
+    {
+      "key": "in",
+      "name": "India",
+      "excel_file": "Jobs_India.xlsx",
+      "locations": ["india", "bengaluru", "bangalore", "hyderabad", "pune", "chennai", "mumbai", "gurugram", "gurgaon", "noida"],
+      "boards": [
+        ["LinkedIn - Backend engineer, India", "https://www.linkedin.com/jobs/search/?keywords=backend%20engineer&location=India"],
+        ["Naukri - Backend developer", "https://www.naukri.com/backend-developer-jobs"],
+        ["Instahyre - Backend developer jobs", "https://www.instahyre.com/backend-developer-jobs/"],
+        ["Wellfound - Backend engineer, India", "https://wellfound.com/role/l/backend-engineer/india"],
+        ["Cutshort - Backend developer, Bangalore", "https://cutshort.io/jobs/backend-developer-jobs-in-bangalore-bengaluru"],
+        ["Hirist - Backend jobs", "https://www.hirist.tech/k/backend-developer-jobs"]
+      ]
+    },
+    {
+      "key": "sg",
+      "name": "Singapore",
+      "excel_file": "Jobs_Singapore.xlsx",
+      "locations": ["singapore"],
+      "work_permit": {
+        "country": "Singapore",
+        "nationality": "Singaporean",
+        "citizens_only_terms": ["Singaporeans only", "only Singaporeans", "Singapore citizens only", "Singapore citizens or PR only", "Singapore citizens and PR only"],
+        "permit_terms": ["Employment Pass", "S Pass"]
+      },
+      "boards": [
+        ["LinkedIn - Backend engineer, Singapore", "https://www.linkedin.com/jobs/search/?keywords=backend%20engineer&location=Singapore"],
+        ["MyCareersFuture - Software engineer", "https://www.mycareersfuture.gov.sg/search?search=software%20engineer"],
+        ["NodeFlair - Backend jobs", "https://nodeflair.com/jobs?query=backend"],
+        ["JobStreet - Backend developer, Singapore", "https://sg.jobstreet.com/backend-developer-jobs"],
+        ["Tech in Asia Jobs - Singapore", "https://www.techinasia.com/jobs/search?country_name[]=Singapore"]
+      ]
+    }
+  ],
+  "title_include": ["backend", "back-end", "back end", "software engineer", "software development engineer", "software developer", "sde", "golang", "go developer", "go engineer", "python developer", "python engineer", "java developer", "java engineer", "platform engineer", "api engineer", "member of technical staff", "full stack", "fullstack", "full-stack", "node.js", "nodejs"],
+  "title_exclude": ["senior", "sr", "staff", "principal", "lead", "manager", "director", "head", "architect", "intern", "internship", "frontend", "front-end", "front end", "android", "ios", "mobile", "qa", "sdet", "test", "testing", "data", "machine learning", "ml", "devops", "sre", "security", "sales", "solutions", "support", "salesforce", "iii", "iv", "sde 3", "sde-3", "sde3", "firmware", "embedded"],
+  "skills": {
+    "golang": 20,
+    "python": 15,
+    "java": 10,
+    "postgres": 8,
+    "microservice": 8,
+    "distributed": 6,
+    "kafka": 6,
+    "grpc": 5,
+    "rest": 5,
+    "api": 4,
+    "redis": 4,
+    "docker": 4,
+    "kubernetes": 4,
+    "aws": 4,
+    "sql": 3,
+    "typescript": 3,
+    "node": 3
+  },
+  "feeds": [
+    {"ats": "greenhouse", "slug": "stripe", "name": "Stripe"},
+    {"ats": "greenhouse", "slug": "razorpaysoftwareprivatelimited", "name": "Razorpay"},
+    {"ats": "greenhouse", "slug": "groww", "name": "Groww"},
+    {"ats": "greenhouse", "slug": "porter", "name": "Porter"},
+    {"ats": "greenhouse", "slug": "inmobi", "name": "InMobi"},
+    {"ats": "greenhouse", "slug": "devrev", "name": "DevRev"},
+    {"ats": "greenhouse", "slug": "rubrik", "name": "Rubrik"},
+    {"ats": "greenhouse", "slug": "mongodb", "name": "MongoDB"},
+    {"ats": "greenhouse", "slug": "elastic", "name": "Elastic"},
+    {"ats": "greenhouse", "slug": "datadog", "name": "Datadog"},
+    {"ats": "greenhouse", "slug": "cockroachlabs", "name": "Cockroach Labs"},
+    {"ats": "greenhouse", "slug": "twilio", "name": "Twilio"},
+    {"ats": "greenhouse", "slug": "straitsx", "name": "StraitsX"},
+    {"ats": "lever", "slug": "cred", "name": "CRED"},
+    {"ats": "lever", "slug": "meesho", "name": "Meesho"},
+    {"ats": "lever", "slug": "zeta", "name": "Zeta"},
+    {"ats": "lever", "slug": "nium", "name": "Nium"},
+    {"ats": "lever", "slug": "ninjavan", "name": "Ninja Van"},
+    {"ats": "ashby", "slug": "atlan", "name": "Atlan"},
+    {"ats": "ashby", "slug": "airwallex", "name": "Airwallex"},
+    {"ats": "ashby", "slug": "clickhouse", "name": "ClickHouse"},
+    {"ats": "ashby", "slug": "temporal", "name": "Temporal"},
+    {"ats": "ashby", "slug": "confluent", "name": "Confluent"},
+    {"ats": "smartrecruiters", "slug": "grab", "name": "Grab"},
+    {"ats": "workable", "slug": "fundingsocieties", "name": "Funding Societies"},
+    {"ats": "cutshort", "slug": "backend-developer-jobs-in-bangalore-bengaluru", "name": "Cutshort (backend, Bangalore)"},
+    {"ats": "cutshort", "slug": "python-jobs-in-bangalore-bengaluru", "name": "Cutshort (Python, Bangalore)"},
+    {"ats": "himalayas", "slug": "backend", "name": "Himalayas (backend, open to India)", "country": "India"},
+    {"ats": "himalayas", "slug": "backend", "name": "Himalayas (backend, open to Singapore)", "country": "Singapore"}
+  ]
+}

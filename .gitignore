@@ -1,0 +1,24 @@
+# Your personal settings (copied from config.example.json on first run)
+config.json
+
+# What the bot writes while it runs
+*.xlsx
+*.xlsx.tmp
+*.unreadable-*
+.jobbot_state.json
+.jobbot_state.json.tmp
+.jobbot.pid
+.jobbot_email
+jobbot.log
+
+# Resumes and other personal documents
+*.pdf
+*.docx
+
+# OS / editor / Python
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+.vscode/
+.idea/
